@@ -1,3 +1,7 @@
+// Author: Amit Kumar Jaiswal
+// Hackerearth Handler: http://hackerearth.com/@amitkumarj441
+// Twitter: @AMIT_GKP
+
 var Promise=require('course')
 var appContext={ready: false,error: false};
 const INVALID_CTX = {ready: false, error: true, message: 'Course not initialized'};

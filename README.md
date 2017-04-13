@@ -13,6 +13,8 @@ https://www.codechef.com/amit_gkp
 **CodeForces Codebase**
 https://www.codeforces.com/profile/amit_gkp
 
+**Kaggle Profile**
+kaggle.com/amitkumarjaiswal
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/amitkumarj441/programming-stuffs/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 

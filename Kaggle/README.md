@@ -15,7 +15,7 @@ The purpose of this competition is to develop a model that can identify various 
 The details of this competition can be found on the [Kaggle Competition](https://www.kaggle.com/c/the-nature-conservancy-fisheries-monitoring) page. The data is available to [download](https://www.kaggle.com/c/the-nature-conservancy-fisheries-monitoring/data).
 
 ## Exploring Dataset
-A detailed analysis of the data set and label classes can be found in the 'Fishery Data Exploration and Preprocessing.ipynb' file in this repository. Important aspects of the data include :
+A detailed analysis of the data set and label classes can be found in the [Fishery Data Exploration and Preprocessing.ipynb](https://github.com/amitkumarj441/Programming-Stuffs/commit/99c37f5b540128dcd45f61466446d677b46888ae) file in this repository. Important aspects of the data include :
 
 - 8 mutually exclusive fish classes
 - 3777 training set images - stored in separate directories for each class

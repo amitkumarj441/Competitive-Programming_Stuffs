@@ -8,23 +8,18 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
 from sklearn.metrics import make_scorer
 import matplotlib.pyplot as plt
+from Pred_na import *
 
 train_df = pd.read_csv("input/train.csv")
 test_df = pd.read_csv("input/test.csv")
 
-def distribucion_price(df):
-
-    price = df["price_doc"].values
-    print(price)
-    sns.distplot(price)
+def distribucion_price(df, variable):
+    
+    df[variable].dropna(inplace = True)
+    price = df[variable].values
+    
+  	sns.distplot(price,)
     plt.show()
-
-vr = []
-
-for x in train_df.columns:
-    if train_df[x].dtypes == 'float':
-        vr.append((np.var(train_df[x]),x))
-
-vr.sort()
-print(vr[:20])
-print(vr[-20:])
+    
+distribucion_price(train_df, "life_sq")
+    

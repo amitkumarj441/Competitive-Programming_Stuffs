@@ -9,19 +9,26 @@ import xgboost as xgb
 import datetime
 
 def predict_missing_variable(df, variable):
-    small_df = df[df[variable] != np.nan]
+    
+    for c in df.columns:
+        if df[c].dtype == 'object':
+            lbl = preprocessing.LabelEncoder()
+            lbl.fit(list(df[c].values))
+            df[c] = lbl.transform(list(df[c].values))
+            
+    df[variable].fillna(-1,inplace=True)
+    
+    small_df = df[df[variable] != -1]
 
     train_y = small_df[variable]
     train_x = small_df.drop(variable, axis=1)
-    test_x = df[df[variable] == np.nan].drop(variable,axis=1)
-
-    print(train_x.head())
+    test_x = df[df[variable] == -1].drop(variable,axis=1)
 
     pred = runXgb(train_x,train_y,test_x)
-    print(len(df[df[variable] == np.nan]))
-    df.loc[df[variable] == np.nan, variable] = pred
-    print(len(df[df[variable] == np.nan]))
-
+    
+    df.loc[df[variable] == -1, variable] = pred	 
+    return df[variable]
+    
 def runXgb(train_x, train_y, test_x = None):
 
     xgb_params = {

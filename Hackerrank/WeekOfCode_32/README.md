@@ -1,5 +1,5 @@
 # Week Of Code 32
 
-## Rank : 151/8094(Ongoing)
+## Rank : 148/8321(Ongoing)
 
-Solved/Attempted : 5/6
+Solved/Attempted : 6/6 ( 4 perfectly solved)

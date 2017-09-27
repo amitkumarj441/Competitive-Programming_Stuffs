@@ -16,3 +16,14 @@ The goal of this competition is to predict which of the provided pairs of questi
   - qid1, qid2 - unique ids of each question (only available in train.csv)
   - question1, question2 - the full text of each question
   - is_duplicate - the target variable, set to 1 if question1 and question2 have essentially the same meaning, and 0 otherwise.
+  
+## Approach
+Using a LSTM Neural Network
+
+  - Questions are converted into lists of words/tokens using text cleaning
+  - Further, these tokens are mapped into dense vector representation 
+using Facebook’s FastText
+  - Duplicate probability is predicted using a dual-channel LSTM Recurrent
+Neural network
+  - Final prediction is done with a [50] LSTM ensemble using a Gradient
+Boosting algorithm

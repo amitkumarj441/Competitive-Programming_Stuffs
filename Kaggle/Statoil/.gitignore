@@ -1,0 +1,5 @@
+.DS_Store
+dataset
+*.hdf5
+submissions
+*.ipynb_checkpoints

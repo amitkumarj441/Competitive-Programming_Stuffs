@@ -1,3 +1,5 @@
+//Author: Amit Kumar Jaiswal
+
 #include<bits/stdc++.h>
 using namespace std;
 

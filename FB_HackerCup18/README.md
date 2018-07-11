@@ -1,5 +1,7 @@
 # Facebook Hacker Cup 2018
 
 ## Qualification Round
+> Solved : 3 
 
-Score: 55
+> Accepted : 2
+> Score: 55

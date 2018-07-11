@@ -1,3 +1,5 @@
+#Author: Amit Kumar Jaiswal 
+
 fbcampus_cnt = int(input())
 result_case = ""
 for i in range(fbcampus_cnt):

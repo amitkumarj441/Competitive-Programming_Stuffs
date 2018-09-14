@@ -1,0 +1,11 @@
+{
+  "vocab_size": 20000,
+  "emb_dim" : 50,
+  "n_filters" : 250,
+  "filter_size" : 3,
+  "max_len" : 200,
+  "repeat_dp_block" : 6,
+  "repeat_dense_block" : 1,
+  "dense_size" : 256,
+  "n_classes" : 6
+}

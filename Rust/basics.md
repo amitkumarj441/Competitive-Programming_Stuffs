@@ -1,0 +1,1 @@
+- `&'static` is a *lifetime specifier*
